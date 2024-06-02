@@ -19,12 +19,12 @@ def funcao_exponencial ():
                 elif ae > 0 and ae < 1:
                     print("A função é Decrescente!")
             elif oc == "2":
-                x = float(input("Digite uma incógnita (x): "))
+                x = float(input("Informe o (x) da função: "))
                 y = ae**x
                 print(y)
             elif oc == "3":
                 def f(x):
-                    x = float(input("Digite uma incógnita (x): "))
+                    x = float(input("Informe o (x) da função:  "))
                     y = ae**x
                     return y
                 #Criando o nosso domínio (Eixo X)
@@ -32,9 +32,8 @@ def funcao_exponencial ():
                 print(eixoX)
 
                 eixoY = []
-                for x in eixoX:
-                    y = f(x)
-                    eixoY.append(y)
+                y = f(x)
+                eixoY.append(y)
 
                 print(eixoY)
                 plt.plot(eixoX, eixoY, label = "f(x) = 2x+1", color = 'b')

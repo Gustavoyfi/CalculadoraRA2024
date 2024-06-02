@@ -68,7 +68,7 @@ def menu_segundograu():
                     y = a*(x**2)+(b*x)+c
                     return y
                       #Criando o nosso domínio (Eixo X)
-                eixoX = np.arange(-115,111,1)
+                eixoX = np.arange(-1200,1500,1)
                 print(eixoX)
 
                 eixoY = []
